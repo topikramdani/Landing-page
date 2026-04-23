@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+          width: 350px;
+          background: #fff;
+          margin: 50px auto;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .radio, .checkbox {
+            width: auto;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: #4facfe;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #007bff;
+        }
+    </style>
+</head>
+<body>
+  
+  <div class="container">
+    <h2>From Pendaftaran</h2>
+    
+    <form>
+      <label>Nama Lengkap</label>
+      <input type="text" name="nama"required>
+      
+      <label>Email</label>
+      <input type="email"name="email"required=>
+      
+       <label>Password</label>
+        <input type="password" name="password" required>
+
+            <label>Jenis Kelamin</label><br>
+        <input class="radio" type="radio" name="jk"> Laki-laki
+        <input class="radio" type="radio" name="jk"> Perempuan<br><br>
+        
+        <label>Hobi</label><br>
+        <input class="checkbox" type="checkbox"> Olahraga
+        <input class="checkbox" type="checkbox"> Membaca
+        <input class="checkbox" type="checkbox"> Gaming<br><br>
+        
+        <label>Tanggal Lahir</label>
+        <input type="date" name="ttl">
+        
+        <label>Alamat</label>
+        <textarea rows="3"></textarea>
+        
+        <label>Jurusan</label>
+        <select>
+          <option>PPLG</option>
+          <option>TBS</option>
+          <option>DKV</option>
+          <option>AKL</option>
+          <option>MPLB</option>
+          <option>BCF</option>
+          <option>PM</option>
+        </select>
+        
+        <button class="btn"type="submit">Daftar</button>
+    </form>
+  </div>
+  
+  </body>
+  </html>
